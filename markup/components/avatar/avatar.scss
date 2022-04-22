@@ -1,0 +1,23 @@
+.avatar {
+    display: flex;
+    align-items: center;
+    &__image {
+        img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
+        & + * {
+            margin-left: 10px;
+        }
+    }
+
+    &__name {
+        font-size: 14px;
+        font-weight: 700;
+        & + * {
+            margin-top: 11px;
+        }
+    }
+
+}

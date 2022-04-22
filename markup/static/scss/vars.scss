@@ -1,0 +1,69 @@
+$font-family-base: 'Verdana', sans-serif;
+
+// main
+$c-white: #ffffff;
+$c-black: #1E1E1E;
+$c-purpule: #77539D;
+$c-blue: #4A69AF;
+
+// box-shadow
+$box-shadow-base: 0px 13px 20px 2px rgba(71, 167, 235, 0.5);
+$box-shadow-cards: 0px 20px 20px -20px rgba(76, 172, 0, 0.4);
+//border-radius по сайту
+$border-radius-base: 4px;
+// ====================
+$breakpoints: (
+    'xs': 0,
+    'sm': 500px,
+    'md': 768px,
+    'lg': 1024px,
+    'xl': 1320px,
+) !default;
+
+// Breakpoint map for bootstrap
+$grid-breakpoints: (
+    'xs': 0,
+    'sm': 500px,
+    'md': 768px,
+    'lg': 1024px,
+    'xl': 1320px,
+) !default;
+
+// Container max-widths for bootstrap
+$container-max-widths: (
+    xs: 100%,
+    sm: 480,
+    md: 768px,
+    lg: 1000px,
+    xl: 1280px,
+) !default;
+// col gutters
+$grid-gutter-width: 30px !default;
+$gutters: (
+    0: 0,
+    1: 12px,
+    2: 15px,
+    3: 24px,
+    4: 30px,
+    5: 16px,
+    6: 32px,
+    7: 75px
+) !default;
+//Table of responsible fonts
+//
+//Define the font-sizes and line-height or ratio (ratio column)
+//More: https://designpub.ru/%D1%88%D1%80%D0%B8%D1%84%D1%82%D1%8B-%D0%B2-%D0%B0%D0%B4%D0%B0%D0%BF%D1%82%D0%B8%D0%B2%D0%BD%D0%BE%D0%BC-%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD%D0%B5-%D0%BA%D0%B0%D0%BA-%D0%BE%D1%80%D0%B3%D0%B0%D0%BD%D0%B8%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D1%8C-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%83-ff4fd0d1577d
+
+$font-sizes: (
+    //   (font-size,      (line-height),  letter-spacing (em) )
+    //   xs, sm, md, lg, xl
+    h1: (22, 35, 24, 24, 48, (36px, 48px, 48px, 60px, 60px), 0),
+    h2: (22, 30, 30, 30, 40, (30px, 36px, 36px, 36px, 48px), 0),
+    h3: (18, 22, 22, 22, 22, (24px, 28px, 28px, 28px, 28px), 0),
+    h4: (16, 16, 18, 18, 18, (22px, 22px, 24px, 24px, 24px), 0),
+    h5: (14, 16, 16, 16, 16, (20px, 22px, 22px, 22px, 22px), 0),
+    p1: (18, 18, 18, 18, 18, (18px, 18px, 24px, 24px, 22px), 0),
+    p2: (16, 16, 16, 16, 16, (19px, 19px, 19px, 19px, 19px), 0),
+    p3: (10, 10, 12, 12, 12, (14px, 14px, 16px, 16px, 19px), 0),
+    p4: (12, 12, 12, 12, 12, (16px, 16px, 16px, 16px, 16px), 0)
+) !default;

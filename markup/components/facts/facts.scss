@@ -1,0 +1,42 @@
+.facts {
+    background: #FAFAFA;
+    padding: 32px 0;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 40px;
+    box-shadow: 0px 6px 29px rgba(69, 69, 69, 0.1);
+    flex-wrap: wrap;
+
+
+
+    @include respond-to(md) {
+        row-gap: 50px;
+        padding: 24px 0;
+    };
+    @include respond-to(sm) {
+        row-gap: 32px;
+    };
+    &__item {
+        @include respond-to(md) {
+            &:nth-child(3n) {
+                width: 100%;
+            }
+        };
+
+        @include respond-to(sm) {
+            width: 100%;
+        };
+    }
+    &-count {
+        font-size: 68px;
+        color: $c-blue;
+        font-weight: bold;
+        text-align: center;
+    }
+    &-name {
+        text-align: center;
+        color: $c-blue;
+        text-align: center;
+    }
+
+}

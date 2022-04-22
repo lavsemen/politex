@@ -1,0 +1,48 @@
+.hero {
+    display: flex;
+    align-items: center;
+    background-image: url("../img/content/hero-image.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 80vh;
+    @include respond-to(lg) {
+        background-size: 378px 364px;
+        height: 60vh;
+    };
+    @include respond-to(md) {
+        background-position: 100% 10%;
+        background-size: 269px 211px;
+        height: 50vh;
+    };
+    @include respond-to(sm) {
+       height: unset;
+       background: none;
+    };
+
+    &__title {
+        @include font-size-get(h1);
+        font-weight: 700;
+        @include respond-to(sm) {
+            text-align: center
+        };
+        & + * {
+            margin-top: 22px;
+        }
+    }
+    &__text {
+        @include font-size-get(p1);
+        & + * {
+            margin-top: 32px;
+        }
+    }
+    &__content {
+        max-width: 514px;
+        @include respond-to(sm) {
+            max-width: 100%
+        };
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+}

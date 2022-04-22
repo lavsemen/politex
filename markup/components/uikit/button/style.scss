@@ -1,0 +1,14 @@
+.button {
+    padding: 14px 23px;
+    display: inline-flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    background: $c-purpule;
+    color: $c-white;
+    border-radius: 10px;
+
+    &:hover {
+        color: $c-white;
+    }
+}

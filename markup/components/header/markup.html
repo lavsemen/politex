@@ -1,0 +1,61 @@
+<header class="header">
+    <div class="container">
+        <div class="header__wrapper">
+            <a href="" class="header__logo">
+                <div class="header__logo-icon">
+                    <img src="static/img/content/logo.svg" alt="">
+                </div>
+                <div class="header__logo-text">
+                    Студенческое <br>
+                    научное <br>
+                    общество
+                </div>
+            </a>
+
+            <div class="header__content">
+                <nav class="header__nav d-none d-sm-block">
+                    <ul class="header__nav-list">
+                        {{#each links}}
+                            <li class="header__nav-item {{#if hide}}d-none d-{{hide}}-block{{/if}}">
+                                <a class="header__nav-link " href="{{url}}">
+                                    {{value}}
+                                </a>
+                            </li>
+                        {{/each}}
+                    </ul>
+
+                </nav>
+                <div class="header__action d-none d-sm-block">
+                    {{> uikit/button/markup text="Вступить"}}
+                </div>
+                <div class="header__burger d-sm-block d-md-none">
+                    <svg width="60" height="43" viewBox="0 0 60 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="60" height="6" rx="3" fill="#626262"/>
+                        <rect y="18" width="60" height="6" rx="3" fill="#B3B3B3"/>
+                        <rect y="37" width="60" height="6" rx="3" fill="white"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="header__menu">
+    <div class="header__menu-close">
+        <svg width="50" height="43" viewBox="0 0 50 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect y="42" width="42" height="6.42857" rx="3.21429" transform="rotate(-90 0 42)" fill="#626262"/>
+            <rect x="21.4297" y="43" width="43" height="6.42857" rx="3.21429" transform="rotate(-90 21.4297 43)" fill="#B3B3B3"/>
+            <path d="M46.0698 42C44.2946 42 42.8555 40.5609 42.8555 38.7857V3.21429C42.8555 1.43909 44.2946 0 46.0698 0V0C47.845 0 49.284 1.43909 49.284 3.21429V38.7857C49.284 40.5609 47.845 42 46.0698 42V42Z" fill="white"/>
+            </svg>
+    </div>
+    {{#each links}}
+        <div class="header__menu-item">
+            <a class="header__menu-link " href="{{url}}">
+                {{value}}
+            </a>
+        </div>
+    {{/each}}
+    <div class="header__menu-item">
+        {{> uikit/button/markup text="Вступить"}}
+    </div>
+</div>
