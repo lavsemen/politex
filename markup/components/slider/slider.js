@@ -3,6 +3,21 @@ document.addEventListener('DOMContentLoaded', () => {
     return new Swiper('.slider', {
         slidesPerView: 3,
         spaceBetween: 42,
+        navigation: {
+            prevEl: '.slider__navigation-prev',
+            nextEl: '.slider__navigation-next',
+        },
+        breakpoints: {
+            0: {
+                slidesPerView: 1,
+            },
+            768: {
+                slidesPerView: 2,
+            },
+            1024: {
+                slidesPerView: 3,
+            }
+        }
     })
    }
 
@@ -12,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const tab = document.querySelectorAll('[role="tab"]')
     tab.forEach(item => {
         item.addEventListener('click', () => {
-           setTimeout(() => window.dispatchEvent(new Event('resize')), 300)
+           setTimeout(() => window.dispatchEvent(new Event('resize')), 250)
         })
     })
 })

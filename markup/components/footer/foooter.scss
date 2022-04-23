@@ -1,0 +1,14 @@
+.footer {
+    padding: 61px 0;
+    &__policy {
+        color: #878787;
+        font-size: 20px;
+        @include respond-to(md) {
+            font-size: 16px;
+        };
+        @include respond-to(sm) {
+            font-size: 12px;
+            text-align: center
+        };
+    }
+}
