@@ -8,10 +8,10 @@
     }
     &__inner {
         &--mt-36 {
-            margin-top: 36px;
+            padding-top: 36px;
 
             @include respond-from-to(md, lg) {
-                margin-top: 64px;
+                padding-top: 64px;
             };
         }
         &--pb-0 {

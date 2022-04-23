@@ -20,4 +20,23 @@
         }
     }
 
+    &__role {
+        @include font-size-get(p2);
+    }
+
+}
+
+.avatar.avatar--small {
+    .avatar {
+        &__name {
+            font-size: 11px;
+            & + * {
+                margin-top: 8px;
+            }
+        }
+
+        &__role {
+            font-size: 10px;
+        }
+    }
 }

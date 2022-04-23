@@ -1,0 +1,30 @@
+.card {
+    border: 0;
+    padding: 24px 33px;
+    box-shadow: 0px 6px 29px rgba(69, 69, 69, 0.1);
+    border-radius: 24px;
+    position: relative;
+    z-index: 4;
+
+    &__title {
+        @include font-size-get(p1);
+        font-weight: 700;
+        & + * {
+            margin-top: 18px;
+            @include respond-to(xl) {
+                margin-top: 8px;
+            };
+        }
+    }
+
+    &__desc {
+        font-size: 14px;
+        color: #747474;
+        & + * {
+            margin-top: 26px;
+            @include respond-to(xl) {
+                margin-top: 13px;
+            };
+        }
+    }
+}

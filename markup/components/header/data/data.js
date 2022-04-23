@@ -20,12 +20,12 @@ const data = {
                 {
                     url: '/',
                     value: 'Мероприятия',
-                    hide: 'lg'
+                    hide: 'xl'
                 },
                 {
                     url: '/',
                     value: 'Конкурсы и гранты',
-                    hide: 'lg'
+                    hide: 'xl'
                 },
             ]
         }
